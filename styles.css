@@ -3,9 +3,9 @@ div {
 }
 
 body {
-  min-height: 100vh;
   /* Fixes mobile viewport bug */
   min-height: -webkit-fill-available;
+  min-height: 100dvh;
   font-family: Tahoma, sans-serif;
   width: 100vw;
   margin: 0;
@@ -29,7 +29,7 @@ h3 {
 
 
 .vh {
-  height: 100vh;
+  height: 100dvh;
 }
 
 .white-text {
@@ -138,6 +138,15 @@ h3 {
   background-color: #004c6c;
 }
 
+@media only screen and (max-width: 1450px) {
+  .vh {
+    height: auto;
+  }
+  .page-text {
+    padding: 1em 2em;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .page-section {
     flex-wrap: wrap;
@@ -145,16 +154,11 @@ h3 {
   }
 
   .page-text {
-    padding: 1em 2em;
-    font-size: 1.5em;
-  }
-
-  .vh {
-    height: auto;
+     font-size: 1.5em;
   }
 
   #section-1 {
-    padding-top: 6vh;
+    padding-top: 6dvh;
     height: auto;
   }
 
@@ -163,7 +167,7 @@ h3 {
   }
 
   .fill {
-    max-height: 50vh;
+    max-height: 50dvh;
   }
 
   .pull-left {
