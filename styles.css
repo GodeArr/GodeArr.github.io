@@ -75,7 +75,6 @@ h3 {
   min-width: 100%;
   min-height: 100%;
   overflow: hidden;
-  background-size: cover;
 }
 
 .image-right-center {
@@ -138,12 +137,21 @@ h3 {
   background-color: #004c6c;
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1450px),
+            screen and (max-height: 1100px) {
   .vh {
     height: auto;
   }
   .page-text {
     padding: 1em 2em;
+  }
+
+  .center-content {
+    align-items: start;
+  }
+
+  #section-7 .fill {
+    flex: auto;
   }
 }
 
