@@ -177,6 +177,10 @@ h3 {
   .fill {
     max-height: 50dvh;
   }
+  
+  .image-fill {
+    object-fit: cover;
+  }
 
   .pull-left {
     margin-left: 0;
@@ -201,6 +205,18 @@ h3 {
     flex: auto;
     margin-left: 3vw;
   }
+
+  #section-2 .image-fill {
+    margin-top: -12rem
+  }
+
+  #section-4 .fill {
+   align-items: end
+  }
+
+  #section-6 .fill{
+    justify-content: right;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -210,7 +226,6 @@ h3 {
   .image-right-center {
     justify-content: center;
   }
-
   .center-content{
     text-align: left;
   }
