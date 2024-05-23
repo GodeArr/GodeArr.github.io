@@ -17,6 +17,53 @@ html {
   height: -webkit-fill-available;
 }
 
+.dark-link:link {
+  color: var(--ga-dark-link);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.dark-link:visited {
+  color: var(--ga-dark-link);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.dark-link:hover {
+  color: var(--ga-dark-link);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.dark-link:active {
+  color: var(--ga-dark-link);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.light-link:link {
+  color: var(--ga-light-link);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.light-link:visited {
+  color: var(--ga-light-link);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.light-link:hover {
+  color: var(--ga-light-link);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.light-link:active {
+  color: var(--ga-light-link);
+  background-color: transparent;
+  text-decoration: underline;
+}
 h1 {
   font-size: 4em;
   word-wrap: break-word;
@@ -170,54 +217,8 @@ h3 {
 #section-footer {
   background-color: #004c6c;
 }
-
-
-.dark-link:link {
-  color: var(--ga-dark-link);
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.dark-link:visited {
-  color: var(--ga-dark-link);
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.dark-link:hover {
-  color: var(--ga-dark-link);
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-.dark-link:active {
-  color: var(--ga-dark-link);
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-.light-link:link {
-  color: var(--ga-light-link);
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.light-link:visited {
-  color: var(--ga-light-link);
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.light-link:hover {
-  color: var(--ga-light-link);
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-.light-link:active {
-  color: var(--ga-light-link);
-  background-color: transparent;
-  text-decoration: underline;
+#section-7 .fill {
+  width: 100%;
 }
 
 #supporter-images{
@@ -240,6 +241,14 @@ h3 {
   max-width: 12em;
 }
 
+.show-on-small-screen{
+  display: none;
+}
+
+.hide-on-small-screen{
+  display: unset;
+}
+
 @media only screen and (max-width: 1450px),
             screen and (max-height: 1100px) {
   .vh {
@@ -259,9 +268,25 @@ h3 {
   .page-text {
     font-size: 1.5em;
  }
+ 
+ #section-omoss .image-fill {
+  margin-left: -30%;
+  object-fit: cover;
+}
 }
 
 @media only screen and (max-width: 1000px) {
+  
+
+  
+  .hide-on-small-screen{
+    display: none;
+  }
+
+  .show-on-small-screen{
+    display: unset;
+  }
+
   .page-section {
     flex-wrap: wrap;
     height: auto;
