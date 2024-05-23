@@ -147,9 +147,12 @@ h3 {
   font-size: 2em;
 }
 
+.menu-padding {
+  padding-top: 5em;
+}
+
 #section-1 {
   background-color: var(--ga-green);
-  padding-top: 10rem;
 }
 
 #section-losningen {
