@@ -1,5 +1,7 @@
-div {
+:root {
   --ga-green: #007239;
+  --ga-dark-link: #000000;
+  --ga-light-link: #ffffff;
 }
 
 body {
@@ -17,23 +19,28 @@ html {
 
 h1 {
   font-size: 4em;
+  word-wrap: break-word;
+white-space: normal;
 }
 h2 {
   font-size: 2.2em;
+  word-wrap: break-word;
+white-space: normal;
 }
 h3 {
   font-size: 2.5em;
-  margin-left: -5em;
+  text-align: left;
+  margin-left: 1em;
+  word-wrap: break-word;
+  white-space: normal;
 }
-
-
 
 .vh {
   height: 100dvh;
 }
 
 .white-text {
-  color: white;
+  color: var(--ga-light-link);
 }
 
 .ms-5 {
@@ -100,8 +107,27 @@ h3 {
 }
 
 .page-text {
-  padding: 3em;
+  padding: 2.5em;
   text-align: left;
+}
+
+.page-header{
+  background-color: #658076; 
+  opacity: .95;
+  padding: 1rem 0 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+}
+
+#header-menu {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .pull-left {
@@ -123,18 +149,92 @@ h3 {
 
 #section-1 {
   background-color: var(--ga-green);
+  padding-top: 10rem;
 }
 
-#section-3 {
+#section-losningen {
   background-color: #658076;
 }
 
-#section-5 {
+#section-aktiviteter {
   background-color: #934a38;
 }
 
-#section-8 {
+#section-omoss {
+  background-color: #658076;
+}
+
+#section-footer {
   background-color: #004c6c;
+}
+
+
+.dark-link:link {
+  color: var(--ga-dark-link);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.dark-link:visited {
+  color: var(--ga-dark-link);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.dark-link:hover {
+  color: var(--ga-dark-link);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.dark-link:active {
+  color: var(--ga-dark-link);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.light-link:link {
+  color: var(--ga-light-link);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.light-link:visited {
+  color: var(--ga-light-link);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.light-link:hover {
+  color: var(--ga-light-link);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.light-link:active {
+  color: var(--ga-light-link);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#supporter-images{
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.supporter-image {
+  max-height: 10em;
+}
+
+.support-image-container {
+  padding: 10px 15px;
+  margin-bottom: 1rem;
+  max-width: 12em;
 }
 
 @media only screen and (max-width: 1450px),
@@ -153,6 +253,9 @@ h3 {
   #section-7 .fill {
     flex: auto;
   }
+  .page-text {
+    font-size: 1.5em;
+ }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -201,20 +304,24 @@ h3 {
     flex: 100%;
   }
 
-  #section-8 .image-right-center {
+  #section-footer .image-right-center {
     flex: auto;
     margin-left: 3vw;
   }
 
-  #section-2 .image-fill {
-    margin-top: -12rem
+  #section-problemet .image-fill {
+    margin-top: -30%
   }
 
-  #section-4 .fill {
+  #section-omoss .image-fill {
+    margin-top: -60%
+  }
+
+  #section-mal .fill {
    align-items: end
   }
 
-  #section-6 .fill{
+  #section-aktivitet-eksempel .fill{
     justify-content: right;
   }
 }
@@ -223,11 +330,26 @@ h3 {
   .page-footer {
     flex-wrap: wrap;
   }
+  .page-text{
+    padding: 1em .4em;
+    font-size: 1.2em;
+  }
   .image-right-center {
     justify-content: center;
   }
   .center-content{
     text-align: left;
+  }
+
+  #section-problemet .image-fill {
+    margin-top: -80%
+  }
+
+  #section-footer .text-section{
+    width: 100%;
+  }
+  #section-footer .page-text {
+    text-align: center;
   }
 
   h1 {
@@ -238,6 +360,6 @@ h3 {
   }
   h3 {
     font-size: 1.5em;
-    margin-left: 1em;
+    margin-left: 0.3m;
   }
 }
