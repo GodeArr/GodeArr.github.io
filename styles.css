@@ -9,7 +9,7 @@ body {
   min-height: -webkit-fill-available;
   min-height: 100dvh;
   font-family: Tahoma, sans-serif;
-  width: 100vw;
+  width: 100dvw;
   margin: 0;
 }
 
@@ -223,7 +223,6 @@ h3 {
 
 #supporter-images{
   display: flex;
-  width: 90%;
   flex-wrap: wrap;
   justify-content: space-around;
   font-size: 1.1rem;
@@ -232,13 +231,14 @@ h3 {
 }
 
 .supporter-image {
-  max-height: 10em;
+  width: 300px;
+  max-width: 80%;
 }
 
 .support-image-container {
   padding: 10px 15px;
   margin-bottom: 1rem;
-  max-width: 12em;
+  max-width: 80%;
 }
 
 .show-on-small-screen{
