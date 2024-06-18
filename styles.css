@@ -207,7 +207,8 @@ h3 {
 }
 
 #section-aktiviteter {
-  background-color: #934a38;
+  background-color: #004c6c;
+  color: #ffffff;
 }
 
 #section-omoss {
@@ -231,7 +232,7 @@ h3 {
 }
 
 .supporter-image {
-  width: 300px;
+  width: 400px;
   max-width: 80%;
 }
 
