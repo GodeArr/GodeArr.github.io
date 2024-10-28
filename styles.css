@@ -250,6 +250,16 @@ h3 {
   display: unset;
 }
 
+.logo-links {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 20%;
+}
+
+.logo-link {
+  height: 50px;
+}
+
 @media only screen and (max-width: 1450px),
             screen and (max-height: 1100px) {
   .vh {
