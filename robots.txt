@@ -1,0 +1,8 @@
+# HeiPetter
+User-agent: *
+
+# Allow public pages
+Allow: /$
+
+# Sitemap location
+Sitemap: https://godearr.no/sitemap.xml
